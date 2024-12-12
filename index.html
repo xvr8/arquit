@@ -7,18 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Menú lateral -->
+    <nav class="menu-lateral">
+        <ul>
+            <li><a href="#nuevas-tec">Nuevas Tec</a></li>
+            <li><a href="#devops">DevOps</a></li>
+            <li><a href="#frontend">Front-End</a></li>
+            <li><a href="#procesos">Procesos</a></li>
+            <li><a href="#integracion">Integración</a></li>
+            <li><a href="#backend">Back-End</a></li>
+            <li><a href="#infraestructura">Infraestructura</a></li>
+            <li><a href="#monitoreo">Monitoreo</a></li>
+            <li><a href="#datos-analitica">Datos y Analítica</a></li>
+            <li><a href="#seguridad">Seguridad</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Arquitectura </h1>
     </header>
     <main class="grid-layout">
         <!-- IZQUIERDA: Nuevas Tec y DevOps -->
-        <div class="side-left">
+        <div class="side-left" id="nuevas-tec">
             <section>
                 <h2>NUEVAS TEC</h2>
                 <div class="box">IoT</div>
                 <div class="box">IA Generativa</div>
             </section>
-            <section>
+            <section id="devops">
                 <h2>DEVOPS</h2>
                 <div class="box">Desarrollo Colaborativo (SCM)</div>
                 <div class="box">Revisión Código (Calidad y Seguridad)</div>
@@ -31,7 +47,7 @@
 
         <!-- CENTRO: Front-End, Procesos, Integración, Back-End, Infraestructura y Monitoreo -->
         <div class="center">
-            <section>
+            <section id="frontend">
                 <h2>FRONT-END</h2>
                 <div class="section-content">
                     <div class="box">Arquetipo Front (Acelerador)</div>
@@ -45,7 +61,7 @@
                     <div class="box">Wiki Evol</div>
                 </div>
             </section>
-            <section>
+            <section id="procesos">
                 <h2>PROCESOS</h2>
                 <div class="section-content">
                     <div class="box">RPA</div>
@@ -58,7 +74,7 @@
                     <div class="box">Push Notification</div>
                 </div>
             </section>
-            <section>
+            <section id="integracion">
                 <h2>INTEGRACIÓN</h2>
                 <div class="section-content">
                     <div class="box">API First</div>
@@ -70,7 +86,7 @@
                     <div class="box">Lineamientos APIs</div>
                 </div>
             </section>
-            <section>
+            <section id="backend">
                 <h2>BACK-END</h2>
                 <div class="section-content">
                     <div class="box">Arquetipo Back (Acelerador)</div>
@@ -83,7 +99,7 @@
                     <div class="box">Lineamientos Backend</div>
                 </div>
             </section>
-            <section>
+            <section id="infraestructura">
                 <h2>INFRAESTRUCTURA</h2>
                 <div class="infrastructure">
                     <div class="subsection">
@@ -100,7 +116,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="monitoreo">
                 <h2>MONITOREO</h2>
                 <div class="section-content">
                     <div class="box">APM</div>
@@ -112,7 +128,7 @@
 
         <!-- DERECHA: Datos y Analítica Empresarial y Seguridad -->
         <div class="side-right">
-            <section>
+            <section id="datos-analitica">
                 <h2>DATOS Y ANALÍTICA EMPRESARIAL</h2>
                 <div class="box">Base de Datos Transaccional</div>
                 <div class="box">Base de Datos NoSQL</div>
@@ -122,7 +138,7 @@
                 <div class="box">Big Data</div>
                 <div class="box">Lineamientos BD Transac y Caché</div>
             </section>
-            <section>
+            <section id="seguridad">
                 <h2>SEGURIDAD</h2>
                 <div class="box">Autenticación / Autorización</div>
                 <div class="box">IAM</div>
@@ -133,7 +149,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy;  Arquitectura </p>
+        <p>&copy; Arquitectura </p>
     </footer>
 </body>
 </html>
