@@ -49,18 +49,34 @@ body {
 
 /* Main Content */
 main {
-    margin-left: 240px; /* Ajustado al ancho del menú */
+    margin-left: 50px; /* Ajustado al ancho del menú */
     padding: 20px;
-    width: calc(100% - 240px); /* Resta el ancho del menú */
+    width:100%; /* Resta el ancho del menú */
 }
 
-/* Grid Layout */
 .grid-layout {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr; /* Proporciones ajustadas */
-    gap: 20px;
+    grid-template-columns: 3fr 8fr 3fr; /* Ajusta las proporciones */
+    gap: 50px; /* Espaciado entre columnas */
 }
 
+/* Ajustes para .side-left */
+.side-left {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Espaciado entre las secciones o elementos */
+}
+/* Títulos de las secciones en la columna izquierda */
+.side-left h2 {
+    font-size: 1.5rem;
+    color: #4caf50;
+    text-align: left;
+}
 .side-left, .side-right {
     background-color: #fff;
     padding: 20px;
@@ -81,23 +97,57 @@ main {
 /* Center Content */
 .center {
     margin-top: 20px;
+    width: 100%;
 }
 
 .section-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: space-between;
 }
 
+/* Cajas individuales */
 .box {
     background-color: #e8f5e9;
     border: 1px solid #c8e6c9;
-    padding: 10px;
     border-radius: 5px;
     text-align: center;
-    font-size: 0.9rem;
-    flex: 1 1 calc(33.33% - 10px); /* Mejor distribución */
+    padding: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Estilo para los enlaces dentro de las cajas */
+.box a.box-link {
+    text-decoration: none;
+    color: #333;
+    display: block; /* Para ocupar todo el espacio */
+    width: 100%;
+    height: 100%;
+    line-height: normal;
+    padding: 10px; /* Ajusta el padding para que ocupe la caja */
+}
+
+/* Hover effect para los enlaces */
+.box a.box-link:hover {
+    background-color: #c8e6c9;
+    color: #4caf50;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Estilo del enlace dentro de la caja */
+.box a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* Hover sobre la caja */
+.box:hover {
+    background-color: #dcedc8;
+    transform: scale(1.05); /* Hace zoom suave al pasar el mouse */
 }
 
 /* Infraestructura */
@@ -122,4 +172,25 @@ footer {
     color: white;
     margin-top: 20px;
     border-radius: 10px;
+}
+/* Ocultar los submenús inicialmente */
+.menu-lateral ul ul {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+/* Mostrar el submenú cuando se active */
+.menu-lateral ul li.active > ul {
+    display: block;
+}
+/* Contenedor de la sección */
+#nuevas-tec {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaciado entre cajas */
+}
+.side-left,
+.side-right {
+    min-width: 200px; /* Ancho mínimo para las columnas laterales */
 }
